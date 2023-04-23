@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+</head>
+<style>
+    /* th{
+        border-style: double;
+    } */
+    table{
+        border-style: line;
+        align-items: center;
+    }
+    tr{
+        border-style: double;
+
+    }
+    td{
+        border-style: double;
+    }
+
+    #blk{
+        color: white;
+        background-color: black;
+    }
+
+    table, th, td {
+  border: 1px solid black;
+}
+th{
+    width: 300px;
+    
+}
+</style>
+<body>
+    <table >
+        <thead>
+            <th style="height: 200px;">
+                <table>
+                    <thead>
+                        <th colspan="2">
+                            Nested Table 2       
+                        </th>
+                        
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Column 1</td>
+                            <td>Column 2</td>
+                        </tr>
+                        <tr>
+                            <td>abc</td>
+                            <td>abc</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+            </th>
+            <th>
+                <table>
+                    <thead >
+                        <th colspan="1">Nested Table 1</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                        <ul>
+                            <li>List item</li>
+                            <li>List item</li>
+                            <li>List item</li>
+                        </ul>
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <th colspan="2">Nested Table 3</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nested Table</td>
+                                <td>Demo Continued</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td><table>
+                    <thead>
+                        <th>Nested Table 4</th>
+                    </thead>
+                    <tbody>
+                        <tr  ><td id="blk" >HTML</td></tr>
+                    </tbody>
+                </table></td>
+            </tr>
+            
+        </tbody>
+
     </table>
-  </body>
+
+
+   
+
+
+
+
+
+</body>
 </html>
